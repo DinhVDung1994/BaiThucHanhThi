@@ -7,14 +7,22 @@
 <body>
 <script>
 
-    function findNumber(num) {
+    function findNumber() {
+        let dem=0;
+        let index;
+        let num;
         let arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         num = parseInt(prompt('Nhập Phần Tử Bạn Muốn Tìm'))
         for (let i = 0; i < arrNumbers.length; i++) {
             if (num === arrNumbers[i]) {
-                document.write('Số ' + num + ' Bạn Cần Tìm có Trong Mảng')
+                index=i;
+                dem++;
             }
-        }return num;
+        }if(dem>0){
+            alert('vị trí của phần tử trong mảng là: '+index)
+        }else {
+            alert('không có phần tử trong mảng')
+        }
     }
     findNumber()
 
