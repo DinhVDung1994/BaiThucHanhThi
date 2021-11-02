@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiPT1(numA, numB) {
+        let result = -numB / numA;
+        if (numA === 0) {
+            if (numB === 0) {
+                alert('Phương Trình Vô Số Nghiệm');
+            } else {
+                alert('Phương Trình Vô Nghiệm');
+            }
+        } else {
+            alert('Phương Trình Có 1 Nghiệm là :' + result);
+        }
+    }
+
+    giaiPT1(8, 8);
+
+</script>
+</body>
+</html>

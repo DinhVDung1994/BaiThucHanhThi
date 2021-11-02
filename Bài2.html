@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function findNumber(num) {
+        let arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        num = parseInt(prompt('Nhập Phần Tử Bạn Muốn Tìm'))
+        for (let i = 0; i < arrNumbers.length; i++) {
+            if (num === arrNumbers[i]) {
+                document.write('Số ' + num + ' Bạn Cần Tìm có Trong Mảng')
+            }
+        }return num;
+    }
+    findNumber()
+
+
+
+
+</script>
+</body>
+</html>
