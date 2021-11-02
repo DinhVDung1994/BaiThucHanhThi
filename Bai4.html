@@ -30,14 +30,20 @@
         setWeight() {
             this.weight = weight;
         }
-
+        toString(){
+            return 'Name :'+this.name +' ;  Weight: '+this.weight;
+        }
     }
 
-    let objAnimal = new Animal(Elephant, 45.6)
+    // let objAnimal = new Animal('Elephant', 45.6)
+    // let stringAnimal = objAnimal.toString();
+    // alert(stringAnimal)
 
-    let nameObjAnimal = Animal.getName();
-    let weightObjAnimal = Animal.getWeight();
 
+    let objAnimal1 = new Animal('Jerry',2)
+    objAnimal1.setName('Tom')
+    let result = objAnimal1.toString();
+    alert(result)
 
 </script>
 </body>
